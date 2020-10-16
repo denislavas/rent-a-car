@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  RentACar
+
+  Created by Denislava Stoyanova on 7.10.20.
+  Copyright © 2020 Denislava Stoyanova. All rights reserved.
+*/
+
+"Keyword Search" = "Keyword Search";
+"No data available" = "No data available";
+"Error" = "Error";
+"OK" = "OK";
+"Can not process data" = "Can not process data";
+"Favourites" = "Favourites";
+"Car" = "Car";
+"Close" = "Close";
