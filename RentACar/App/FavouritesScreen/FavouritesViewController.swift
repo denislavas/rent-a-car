@@ -78,7 +78,7 @@ extension FavouritesViewController: UITableViewDataSource {
         }
 
         // Configure cell label
-        cell.carLabel.text = car.name
+        cell.carLabel.text = car.vehicleType
 
         return cell
     }

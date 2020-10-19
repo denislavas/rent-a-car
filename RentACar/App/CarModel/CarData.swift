@@ -11,15 +11,18 @@ import Foundation
 struct CarData: Decodable {
     var name: String
     var primaryImageURL: String
+    var vehicleType: String
     
     enum RootKeys: String, CodingKey {
         case attributes = "attributes"
         case relationships = "relationships"
+        
     }
     
     enum AttributesKeys: String, CodingKey {
         case name = "name"
         case primaryImageURL = "primary_image_url"
+        case vehicleType = "display_vehicle_type"
     }
     
     init(from decoder: Decoder) throws {
@@ -29,6 +32,7 @@ struct CarData: Decodable {
         let attributes = try container.nestedContainer(keyedBy: AttributesKeys.self, forKey: .attributes)
         name = try attributes.decode(String.self, forKey: .name)
         primaryImageURL = try attributes.decode(String.self, forKey: .primaryImageURL)
+        vehicleType = try attributes.decode(String.self, forKey: .vehicleType)
         
     }
 }
