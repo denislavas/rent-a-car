@@ -35,7 +35,7 @@ class SelecedCarViewController: UIViewController {
         super.viewDidLoad()
         selectedCarImageView = UIImageView()
         viewModel.delegate = self
-        title = NSLocalizedString("Car", comment: "")
+        title = NSLocalizedString("Car2", comment: "")
         viewModel.carSelected()
 
         selectedCarImageView.contentMode = .scaleAspectFill
