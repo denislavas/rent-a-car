@@ -85,7 +85,7 @@ extension APIManager: RentalsService {
 
 extension APIManager: FavouritesService {
     func favorites(completion: @escaping (Response<CarResponse>) -> Void)  {
-        let endpoint = RentalsEndpoint("Trail")
+        let endpoint = RentalsEndpoint("Tre")
         request(type: endpoint, completion: completion)
     }
 }
