@@ -12,6 +12,7 @@ struct CarData: Decodable {
     var name: String
     var primaryImageURL: String
     var vehicleType: String
+    var description: String
     
     enum RootKeys: String, CodingKey {
         case attributes = "attributes"
@@ -23,6 +24,7 @@ struct CarData: Decodable {
         case name = "name"
         case primaryImageURL = "primary_image_url"
         case vehicleType = "display_vehicle_type"
+        case description = "description_included"
     }
     
     init(from decoder: Decoder) throws {
@@ -33,7 +35,8 @@ struct CarData: Decodable {
         name = try attributes.decode(String.self, forKey: .name)
         primaryImageURL = try attributes.decode(String.self, forKey: .primaryImageURL)
         vehicleType = try attributes.decode(String.self, forKey: .vehicleType)
-        
+        description = try attributes.decode(String.self, forKey: .description)
+    
     }
 }
 
