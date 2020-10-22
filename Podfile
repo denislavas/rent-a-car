@@ -8,4 +8,5 @@ target 'RentACar' do
   # Pods for RentACar
   pod 'Alamofire' 
   pod 'AlamofireImage' 
+  pod 'ParallaxHeader'
 end
